@@ -47,6 +47,26 @@ map <leader>e :e! ~/.vim_runtime/vimrc<cr>
 autocmd! bufwritepost vimrc source ~/.vim_runtime/vimrc
 
 
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => VIM user interface
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Colors and Fonts
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Who needs .gvimrc?
+if has('gui_running')
+  set encoding=utf-8
+  "set guifont=Monospace\ Bold\ 9
+  set guifont=Bitstream\ Vera\ Sans\ Mono\ 9
+  " Turn off toolbar and menu
+  set guioptions-=T
+  set guioptions-=m
+  colorscheme clouds
+else
+  colorscheme desert
+end
+
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Plugins
@@ -54,6 +74,8 @@ autocmd! bufwritepost vimrc source ~/.vim_runtime/vimrc
 
 " Sets up Pathogen
 runtime bundle/pathogen/autoload/pathogen.vim
+call pathogen#runtime_append_all_bundles()
+call pathogen#helptags()
 call pathogen#infect() 
 
 

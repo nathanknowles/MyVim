@@ -134,6 +134,10 @@ call pathogen#runtime_append_all_bundles()
 call pathogen#helptags()
 call pathogen#infect() 
 
+" NERDTree
+map <F8> :NERDTreeToggle<CR>
+
+
 
 "Can be: linux, mac, windows
 fun! MySys()

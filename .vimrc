@@ -49,7 +49,7 @@ map <leader>e :e! ~/.vim_runtime/vimrc<cr>
 
 " When vimrc is edited, reload it
 autocmd! bufwritepost vimrc source ~/.vim_runtime/vimrc
-
+set dir=$TEMP
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => VIM user interface

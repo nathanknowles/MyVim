@@ -129,7 +129,7 @@ endfunc
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 " Sets up Pathogen
-runtime bundle/pathogen/autoload/pathogen.vim
+runtime bundle\pathogen\autoload\pathogen.vim
 call pathogen#runtime_append_all_bundles()
 call pathogen#helptags()
 call pathogen#infect() 

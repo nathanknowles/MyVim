@@ -28,7 +28,10 @@ set nocompatible
 set spelllang=en
 
 syntax on
+set t_Co=256
+
 " Sets how many lines of history VIM has to remember
+
 set history=1000
 set undolevels=1000
 
@@ -103,10 +106,13 @@ if has('gui_running')
   
   colorscheme clouds
 else
-  colorscheme desert
+  colorscheme clouds
+  "colorscheme desert
 endif
 
+
 if exists('+colorcolumn')
+  hi ColorColumn guibg=#2d2d2d
   set colorcolumn=80
 else
   au BufWinEnter * let w:m2=matchadd('ErrorMsg', '\%>80v.\+', -1)

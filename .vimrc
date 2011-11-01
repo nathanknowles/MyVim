@@ -49,8 +49,9 @@ map <leader>e :e! ~/.vim_runtime/vimrc<cr>
 
 " When vimrc is edited, reload it
 autocmd! bufwritepost vimrc source ~/.vim_runtime/vimrc
-set dir=$TEMP
-
+if has('gui_win32')
+    set dir=$TEMP
+endif
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => VIM user interface
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -100,7 +101,7 @@ if has('gui_running')
   colorscheme clouds
 else
   colorscheme desert
-end
+endif
 
 
 

@@ -25,7 +25,13 @@
 " No vi-compatible
 set nocompatible
 
+set spelllang=en
+
+syntax on
+set t_Co=256
+
 " Sets how many lines of history VIM has to remember
+
 set history=1000
 set undolevels=1000
 
@@ -49,8 +55,9 @@ map <leader>e :e! ~/.vim_runtime/vimrc<cr>
 
 " When vimrc is edited, reload it
 autocmd! bufwritepost vimrc source ~/.vim_runtime/vimrc
-
-
+if has('gui_win32')
+    set dir=$TEMP
+endif
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => VIM user interface
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -99,9 +106,20 @@ if has('gui_running')
   
   colorscheme clouds
 else
-  colorscheme desert
-end
+  colorscheme clouds
+  "colorscheme desert
+endif
 
+
+if exists('+colorcolumn')
+  hi ColorColumn guibg=#2d2d2d
+  set colorcolumn=80
+else
+  au BufWinEnter * let w:m2=matchadd('ErrorMsg', '\%>80v.\+', -1)
+endif
+
+highlight OverLength ctermbg=red ctermfg=white guibg=#592929
+match OverLength /\%81v.\+/
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -129,7 +147,7 @@ endfunc
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 " Sets up Pathogen
-runtime bundle/pathogen/autoload/pathogen.vim
+runtime bundle\pathogen\autoload\pathogen.vim
 call pathogen#runtime_append_all_bundles()
 call pathogen#helptags()
 call pathogen#infect() 

@@ -78,14 +78,16 @@ if exists("syntax_on")
       hi erubyDelimiter  guifg=#e92e2e guibg=NONE gui=NONE
       hi erubyComment  guifg=#3c403b guibg=NONE gui=NONE
       hi erubyRailsMethod  guifg=#e92e2e guibg=NONE gui=NONE
-      hi htmlTag  guifg=NONE guibg=NONE gui=NONE
-      hi htmlEndTag  guifg=NONE guibg=NONE gui=NONE
-      hi htmlTagName  guifg=NONE guibg=NONE gui=NONE
-      hi htmlArg  guifg=NONE guibg=NONE gui=NONE
+      hi htmlSpecialTagName  guifg=#61605e guibg=NONE gui=NONE
+      hi htmlTag  guifg=#61605e guibg=NONE gui=NONE
+      hi htmlEndTag  guifg=#61605e guibg=NONE gui=NONE
+      hi htmlTagName  guifg=#61605e guibg=NONE gui=NONE
+      hi htmlArg  guifg=#61605e guibg=NONE gui=NONE
       hi htmlSpecialChar  guifg=#a165ac guibg=NONE gui=NONE
       hi javaScriptFunction  guifg=#e92e2e guibg=NONE gui=NONE
       hi javaScriptRailsFunction  guifg=#e92e2e guibg=NONE gui=NONE
       hi javaScriptBraces  guifg=NONE guibg=NONE gui=NONE
+      hi javaScriptMember  guifg=#a165ac guibg=NONE gui=NONE
       hi yamlKey  guifg=#606060 guibg=NONE gui=NONE
       hi yamlAnchor  guifg=NONE guibg=NONE gui=NONE
       hi yamlAlias  guifg=NONE guibg=NONE gui=NONE

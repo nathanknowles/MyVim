@@ -92,10 +92,12 @@ autocmd FileType c set omnifunc=ccomplete#Complete
 " => Colors and Fonts
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Who needs .gvimrc?
+
+set guifont=Consolas:h9
 if has('gui_running')
   set encoding=utf-8
-  "set guifont=Monospace\ Bold\ 9
-  set guifont=Bitstream\ Vera\ Sans\ Mono\ 9
+"  set guifont=Consolas:h9
+  "set guifont=Bitstream\ Vera\ Sans\ Mono\ 9
   " Turn off toolbar and menu
   set guioptions-=T
   set guioptions-=m

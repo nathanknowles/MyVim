@@ -156,7 +156,7 @@ call pathogen#infect()
 
 " NERDTree
 map <F8> :NERDTreeToggle<CR>
-
+let g:ConqueTerm_PyVersion = 3
 
 
 "Can be: linux, mac, windows

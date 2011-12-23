@@ -84,6 +84,9 @@ if exists("syntax_on")
       hi htmlTagName  guifg=#61605e guibg=NONE gui=NONE
       hi htmlArg  guifg=#61605e guibg=NONE gui=NONE
       hi htmlSpecialChar  guifg=#a165ac guibg=NONE gui=NONE
+      hi xmlTag  guifg=#61605e guibg=NONE gui=NONE
+      hi xmlTagName  guifg=#61605e guibg=NONE gui=NONE
+      hi xmlEndTag  guifg=#61605e guibg=NONE gui=NONE
       hi javaScriptFunction  guifg=#e92e2e guibg=NONE gui=NONE
       hi javaScriptRailsFunction  guifg=#e92e2e guibg=NONE gui=NONE
       hi javaScriptBraces  guifg=NONE guibg=NONE gui=NONE

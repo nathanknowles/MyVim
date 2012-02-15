@@ -50,7 +50,7 @@ if exists("syntax_on")
       hi Tag              guifg=#606060 guibg=NONE    gui=NONE
       hi Title            guifg=#929292 guibg=NONE    gui=bold
       hi Todo             guifg=#3c403b guibg=NONE    gui=inverse,bold
-      hi Type             guifg=NONE    guibg=NONE    gui=NONE
+      hi Type             guifg=#a165ac guibg=NONE    gui=NONE
       hi Underlined       guifg=NONE    guibg=NONE    gui=underline
       hi rubyClass  guifg=#927c5d guibg=NONE gui=NONE
       hi rubyFunction  guifg=NONE guibg=NONE gui=NONE

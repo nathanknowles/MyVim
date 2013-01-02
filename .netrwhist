@@ -1,3 +1,6 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =1
-let g:netrw_dirhist_1='/home/nknowles/.vim'
+let g:netrw_dirhist_cnt =4
+let g:netrw_dirhist_1='/home/nknowles/Projects/cluster/CapConfig'
+let g:netrw_dirhist_2='/var/www/wordpress/wp-content/plugins/wordpress-mu-domain-mapping'
+let g:netrw_dirhist_3='/var/www/wordpress/wp-content'
+let g:netrw_dirhist_4='/home/nknowles/.zenmap'
